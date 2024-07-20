@@ -9,7 +9,7 @@ let pizzaToppings = ["bacon", "onion", "green pepper", "pineapple"];
 function greetCustomer() {
 console.log("Welcome to Learsi's Pizza, our toppings are:");
 for (let topping of pizzaToppings) {
-    console.log(topping;
+    console.log(topping);
 }
 // Function to get the pizza order 
 function getPizzaOrder(size,crust, ...toppings) {
@@ -21,7 +21,7 @@ return [size, crust, toppings];
 // Function to prepare the pizza 
 
 function preparePizza(orderArray) {
-    console.log"...Cooking pizza...");
+    console.log("...Cooking pizza...");
     let pizza ={ 
      size: orderArray[0],
      crust: orderArray[1],
@@ -33,14 +33,13 @@ function preparePizza(orderArray) {
 // Function to serve the pizza 
 
 function servePizza(pizza) {
-    console.log('Order up! Heres's your ${pizza.size} ${pizza.crust} crust pizza with ${pizza.toppings.join(",")}. Enjoy!`);
+    console.log(`Order up! Heres's your ${pizza.size} ${pizza.crust} crust pizza with ${pizza.toppings.join(",")}. Enjoy!`);
 return pizza;
 }
 // Call each function and use the returned value from the previous function as its input
 
 greetCustomer();
 let order = getPizzaOrder("large", "thick", "bacon", "onion", "green pepper");
-let preparedPizza = preparedPizza(order);
-servePizza(preparedPizza);
+servePizza(preparedPizza(order));
 
 
